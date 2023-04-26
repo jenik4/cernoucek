@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&family=Roboto+Slab:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a192f;
+}
+
+#containernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+  margin: 2em;
+  padding: 1rem 0;
+  border-bottom: 1px solid #99edc3;
+  transition: 1s;
+   user-select: none;
+}
+
+.scroll-container {
+  overflow-y: scroll;
+  overflow-y: hidden;
+}
+
+.boxnav {
+  margin-right: 2rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.boxnav a:hover {
+  color: #99edc3;
+  transition: 0.5s;
+}
+
+.boxnav:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:link {
+  text-decoration: none;
+  color: gray;
+}
+
+#containerwel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  font-family: "Roboto Slab", serif;
+}
+
+.boxwelcome {
+  width: 1500px;
+  height: 200px;
+  padding: 2em;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#experience {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#work {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.boxcon {
+  padding: 1em;
+  /*border: 1px solid #99EDC3;*/
+  border-radius: 1em;
+  width: 750px;
+  height: 200px;
+  margin: 1em;
+}
+
+.boxcon2 {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid #99EDC3;*/
+  padding: 1em;
+  margin: 1em;
+}
+
+.boxexp {
+  padding: 1em;
+  margin: 1em;
+  height: 300px;
+  width: 100%;
+}
+
+.boxwor {
+  padding: 1em;
+  margin: 1em;
+  height: 300px;
+  width: 100%;
+}
+
+.boxcont{
+  padding: 1em;
+  margin: 1em;
+  height: 300px;
+  width: 100%;
+}
+
+.boxfo{
+  padding: 1em;
+  margin: 1em;
+  height: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.boxcon2:first-child {
+  border-right: 1px solid #99edc3;
+}
+
+/*.boxcon:first-child {
+  color: #99edc3;
+}*/
+
+.boxexp:first-child {
+  border-right: 1px solid #99edc3;
+}
+
+.boxwor a:hover{
+  color: #99edc3;
+  transition: 0.4s;
+}
+
+.boxwor:first-child{
+border-right: 1px solid #99edc3;
+}
+
+.boxcont:first-child{
+  border-right: 1px solid #99edc3;
+}
+
+span {
+  color: #99edc3;
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+}
+
+.span01 {
+  color: #99edc3;
+  font-family: "Overpass Mono", monospace;
+  font-size: 15px;
+}
+
+.numbersheadline {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+
+.headline {
+  color: #99edc3;
+  font-family: "Overpass Mono", monospace;
+  display: inline-flex;
+}
+
+.white {
+  color: white;
+  font-size: 60px;
+  font-family: "Roboto Slab", serif;
+}
+
+.gray {
+  color: rgb(109, 118, 128);
+  font-size: 60px;
+  font-family: "Roboto Slab", serif;
+}
+
+.intro {
+  color: rgb(109, 118, 128);
+  font-size: 15px;
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+#containerfoot {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #99edc3;
+  height: 100px;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  color: white;
+}
+
+@media (max-width: 530px) {
+  .white {
+    font-size: 50px;
+  }
+  .gray {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 510px) {
+  .intro {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #containernav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}*/
+
+::-webkit-scrollbar-thumb {
+  background: rgb(82, 89, 96);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #99edc3;
+}
+
+.kostel {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  background-image: url(../img/kostel_skola.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 1em;
+}
+
+.kostel1 {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  background-image: url(../img/kostel.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 1em;
+}
+
+.letadlo {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  background-image: url(../img/letadlo.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 1em;
+}
+
+.blackguy:hover {
+  opacity: 1;
+}
