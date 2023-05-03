@@ -131,6 +131,7 @@ a:link {
 }
 
 .boxcont{
+  font-size: 30px;
   padding: 1em;
   margin: 1em;
   height: 300px;
@@ -142,7 +143,7 @@ a:link {
   margin: 1em;
   height: 20px;
   width: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
 .boxcon2:first-child {
@@ -218,9 +219,9 @@ p {
 
 #containerfoot {
   display: flex;
-  flex-direction: row;
+  
   border: 1px solid black;
-  height: 100px;
+  height: 80px;
   width: 100%;
   font-family: "Roboto Slab", serif;
   color:black;
@@ -247,6 +248,14 @@ p {
     flex-direction: column;
   }
 }
+
+@media (max-width: 600px) {
+  .numbersheadline{
+    font-size: 12px;
+  }
+}
+  
+
 
 ::-webkit-scrollbar {
   width: 10px;
